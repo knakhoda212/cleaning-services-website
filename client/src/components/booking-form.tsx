@@ -62,7 +62,7 @@ export default function BookingForm() {
   };
 
   const handleCallNow = () => {
-    window.location.href = "tel:+971501234567";
+    window.location.href = "tel:+971544491737";
   };
 
   return (
@@ -279,7 +279,7 @@ export default function BookingForm() {
                   className="flex-1 bg-secondary text-white py-4 px-8 rounded-xl font-semibold hover:bg-dubai-gold transition-colors"
                 >
                   <Phone className="mr-2 h-5 w-5" />
-                  Call Now: +971 50 123 4567
+                  Call Now: +971 54 449 1737
                 </Button>
               </div>
             </form>
@@ -294,14 +294,14 @@ export default function BookingForm() {
                   <Phone className="text-white h-6 w-6" />
                 </div>
                 <p className="font-semibold text-gray-900">Call Us</p>
-                <p className="text-primary font-semibold">+971 50 123 4567</p>
+                <p className="text-primary font-semibold">+971 54 449 1737</p>
               </div>
               <div className="text-center">
                 <div className="w-12 h-12 bg-accent rounded-full flex items-center justify-center mx-auto mb-3">
                   <MessageCircle className="text-white h-6 w-6" />
                 </div>
                 <p className="font-semibold text-gray-900">WhatsApp</p>
-                <p className="text-accent font-semibold">+971 50 123 4567</p>
+                <p className="text-accent font-semibold">+971 54 449 1737</p>
               </div>
               <div className="text-center">
                 <div className="w-12 h-12 bg-secondary rounded-full flex items-center justify-center mx-auto mb-3">
