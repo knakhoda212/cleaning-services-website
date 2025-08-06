@@ -74,7 +74,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center">
                 <Clock className="mr-3 text-secondary h-5 w-5" />
-                24/7 Available
+                7AM-7PM Mon-Sat
               </li>
             </ul>
           </div>

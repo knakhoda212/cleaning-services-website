@@ -14,7 +14,7 @@ const highlights = [
   {
     icon: Clock,
     title: "Flexible Timing",
-    description: "Same-day service available across Dubai"
+    description: "7AM-7PM Monday to Saturday across Dubai"
   },
   {
     icon: Award,

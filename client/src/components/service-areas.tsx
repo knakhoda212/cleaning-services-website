@@ -38,7 +38,7 @@ export default function ServiceAreas() {
             
             <div className="mt-8 p-6 bg-sand/30 rounded-xl">
               <h4 className="font-semibold text-gray-900 mb-2">Same-Day Service Available</h4>
-              <p className="text-gray-600 mb-4">Need urgent cleaning? We offer same-day service for most areas in Dubai when booked before 2 PM.</p>
+              <p className="text-gray-600 mb-4">Need urgent cleaning? We offer same-day service for most areas in Dubai when booked before 2 PM. Operating hours: 7AM-7PM Monday to Saturday.</p>
               <Button className="bg-secondary text-white px-6 py-3 rounded-full hover:bg-dubai-gold transition-colors">
                 Check Availability
               </Button>
