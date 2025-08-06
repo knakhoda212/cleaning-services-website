@@ -125,6 +125,7 @@ export default function BookingForm() {
                       <FormControl>
                         <Input 
                           {...field}
+                          value={field.value || ""}
                           type="email"
                           placeholder="your.email@example.com"
                           className="px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-primary focus:border-primary transition-colors"
@@ -195,6 +196,7 @@ export default function BookingForm() {
                       <FormControl>
                         <Input 
                           {...field}
+                          value={field.value || ""}
                           type="date"
                           className="px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-primary focus:border-primary transition-colors"
                         />
@@ -232,6 +234,7 @@ export default function BookingForm() {
                     <FormControl>
                       <Textarea 
                         {...field}
+                        value={field.value || ""}
                         placeholder="Tell us about any specific requirements, areas of focus, or questions you have..."
                         className="px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-primary focus:border-primary transition-colors h-32"
                       />

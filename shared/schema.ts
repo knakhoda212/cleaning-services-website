@@ -39,6 +39,11 @@ export const insertBookingSchema = createInsertSchema(bookings).pick({
   preferredDate: true,
   details: true,
   consent: true,
+}).extend({
+  email: z.string().optional(),
+  preferredDate: z.string().optional(),
+  details: z.string().optional(),
+  consent: z.string().optional()
 });
 
 export type InsertUser = z.infer<typeof insertUserSchema>;
