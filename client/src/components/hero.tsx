@@ -61,8 +61,8 @@ export default function Hero() {
             <div className="text-sm text-blue-200">Experience</div>
           </div>
           <div className="text-center">
-            <div className="text-3xl font-bold text-secondary">24/7</div>
-            <div className="text-sm text-blue-200">Available</div>
+            <div className="text-3xl font-bold text-secondary">7AM-7PM</div>
+            <div className="text-sm text-blue-200">Mon-Sat</div>
           </div>
         </div>
       </div>
