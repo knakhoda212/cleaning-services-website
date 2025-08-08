@@ -1,0 +1,854 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seven Degree Cleaning Services - Professional Cleaning in Dubai</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#1E3A8A',
+                        'secondary': '#D97706',
+                        'accent': '#059669',
+                        'dubai-gold': '#B45309',
+                        'sand': '#FEF3C7'
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'system-ui', 'sans-serif']
+                    }
+                }
+            }
+        };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="font-sans">
+    <!-- @COMPONENT: Navigation [sticky header with smooth scroll] -->
+    <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-sm z-50 shadow-sm border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-spray-can text-primary text-2xl"></i>
+                    <span class="text-xl font-bold text-primary">Seven Degree</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#services" class="text-gray-600 hover:text-primary transition-colors duration-200">Services</a>
+                    <a href="#about" class="text-gray-600 hover:text-primary transition-colors duration-200">About</a>
+                    <a href="#gallery" class="text-gray-600 hover:text-primary transition-colors duration-200">Gallery</a>
+                    <a href="#testimonials" class="text-gray-600 hover:text-primary transition-colors duration-200">Reviews</a>
+                    <a href="#contact" class="text-gray-600 hover:text-primary transition-colors duration-200">Contact</a>
+                    <button class="bg-primary text-white px-6 py-2 rounded-full hover:bg-blue-800 transition-colors duration-200">
+                        Book Now
+                    </button>
+                </div>
+                <div class="md:hidden">
+                    <button class="text-gray-600 hover:text-primary">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- @END_COMPONENT: Navigation -->
+
+    <!-- @COMPONENT: Hero [main banner with CTA] -->
+    <section class="relative min-h-screen flex items-center justify-center pt-16">
+        <!-- Dubai skyline background with cleaning overlay -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" 
+                 alt="Dubai skyline at sunset" 
+                 class="w-full h-full object-cover"/>
+            <div class="absolute inset-0 bg-primary/80"></div>
+        </div>
+        
+        <div class="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+                Premium Cleaning
+                <span class="block text-secondary">Services in Dubai</span>
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 text-blue-100 max-w-2xl mx-auto leading-relaxed">
+                Professional residential and commercial cleaning with 100% satisfaction guarantee. 
+                Trusted by over 500+ Dubai families and businesses.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <button class="bg-secondary text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-dubai-gold transition-all duration-300 transform hover:scale-105 shadow-lg">
+                    <i class="fas fa-calendar-check mr-2"></i>
+                    Book Free Inspection
+                </button>
+                <button class="border-2 border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-primary transition-all duration-300">
+                    <i class="fas fa-play mr-2"></i>
+                    Watch Demo
+                </button>
+            </div>
+            
+            <!-- Quick stats -->
+            <div class="mt-16 grid grid-cols-3 gap-8 max-w-lg mx-auto">
+                <div class="text-center">
+                    <div class="text-3xl font-bold text-secondary">500+</div>
+                    <div class="text-sm text-blue-200">Happy Clients</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl font-bold text-secondary">7 Years</div>
+                    <div class="text-sm text-blue-200">Experience</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl font-bold text-secondary">24/7</div>
+                    <div class="text-sm text-blue-200">Available</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll indicator -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white animate-bounce">
+            <i class="fas fa-chevron-down text-2xl"></i>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Hero -->
+
+    <!-- @COMPONENT: ServiceHighlights [key differentiators] -->
+    <section class="py-20 bg-sand/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Why Dubai Chooses Seven Degree</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">Premium cleaning services that exceed expectations, every single time.</p>
+            </div>
+
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="text-center group">
+                    <div class="w-20 h-20 bg-primary rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-secondary transition-colors duration-300">
+                        <i class="fas fa-shield-alt text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Insured & Bonded</h3>
+                    <p class="text-gray-600">Fully licensed and insured for your peace of mind</p>
+                </div>
+
+                <div class="text-center group">
+                    <div class="w-20 h-20 bg-primary rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-secondary transition-colors duration-300">
+                        <i class="fas fa-leaf text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Eco-Friendly</h3>
+                    <p class="text-gray-600">Safe, non-toxic cleaning products for your family</p>
+                </div>
+
+                <div class="text-center group">
+                    <div class="w-20 h-20 bg-primary rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-secondary transition-colors duration-300">
+                        <i class="fas fa-clock text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Flexible Timing</h3>
+                    <p class="text-gray-600">Same-day service available across Dubai</p>
+                </div>
+
+                <div class="text-center group">
+                    <div class="w-20 h-20 bg-primary rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-secondary transition-colors duration-300">
+                        <i class="fas fa-medal text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Quality Guarantee</h3>
+                    <p class="text-gray-600">100% satisfaction or we'll make it right</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: ServiceHighlights -->
+
+    <!-- @COMPONENT: Services [detailed service showcase] -->
+    <section id="services" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Our Professional Services</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">From deep cleaning to maintenance, we provide comprehensive cleaning solutions for homes and businesses across Dubai.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- @MAP: services.map(service => ( -->
+                <div class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100">
+                    <!-- Modern apartment living room with pristine cleaning -->
+                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400" 
+                         alt="Clean modern living room" 
+                         class="w-full h-48 object-cover rounded-t-2xl"/>
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <i class="fas fa-home text-primary text-xl mr-3"></i>
+                            <h3 class="text-xl font-semibold">Residential Cleaning</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">Complete home cleaning including all rooms, kitchen deep clean, bathroom sanitization, and floor care.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-secondary font-bold text-lg">From AED 150</span>
+                            <button class="bg-primary text-white px-4 py-2 rounded-full hover:bg-blue-800 transition-colors">
+                                Book Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100">
+                    <!-- Modern office space with clean workstations -->
+                    <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400" 
+                         alt="Clean modern office space" 
+                         class="w-full h-48 object-cover rounded-t-2xl"/>
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <i class="fas fa-building text-primary text-xl mr-3"></i>
+                            <h3 class="text-xl font-semibold">Office Cleaning</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">Professional office maintenance including workstations, meeting rooms, restrooms, and common areas.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-secondary font-bold text-lg">From AED 300</span>
+                            <button class="bg-primary text-white px-4 py-2 rounded-full hover:bg-blue-800 transition-colors">
+                                Book Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100">
+                    <!-- Sparkling clean modern kitchen with stainless steel appliances -->
+                    <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400" 
+                         alt="Spotless modern kitchen" 
+                         class="w-full h-48 object-cover rounded-t-2xl"/>
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <i class="fas fa-magic text-primary text-xl mr-3"></i>
+                            <h3 class="text-xl font-semibold">Deep Cleaning</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">Intensive cleaning including appliances, inside cabinets, baseboards, and all hard-to-reach areas.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-secondary font-bold text-lg">From AED 250</span>
+                            <button class="bg-primary text-white px-4 py-2 rounded-full hover:bg-blue-800 transition-colors">
+                                Book Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100">
+                    <!-- Moving boxes in a clean, empty room ready for new occupants -->
+                    <img src="https://pixabay.com/get/g3df13f1781541cf117c662ac1184885a8527d58d0c38a5ced907a28400d78fee19eb060e1df7718aea5004951ff97b2d3246ee0e04575b5c71df6719553f48cc_1280.jpg" 
+                         alt="Clean empty room with moving boxes" 
+                         class="w-full h-48 object-cover rounded-t-2xl"/>
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <i class="fas fa-box-open text-primary text-xl mr-3"></i>
+                            <h3 class="text-xl font-semibold">Move-in/Move-out</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">Complete property cleaning for tenants and landlords, ensuring deposit return and fresh start.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-secondary font-bold text-lg">From AED 400</span>
+                            <button class="bg-primary text-white px-4 py-2 rounded-full hover:bg-blue-800 transition-colors">
+                                Book Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100">
+                    <!-- Construction site cleaned and ready for occupancy -->
+                    <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400" 
+                         alt="Clean post-construction interior" 
+                         class="w-full h-48 object-cover rounded-t-2xl"/>
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <i class="fas fa-hard-hat text-primary text-xl mr-3"></i>
+                            <h3 class="text-xl font-semibold">Post-Construction</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">Specialized cleaning after renovation or construction, removing dust, debris, and construction residue.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-secondary font-bold text-lg">From AED 500</span>
+                            <button class="bg-primary text-white px-4 py-2 rounded-full hover:bg-blue-800 transition-colors">
+                                Book Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100">
+                    <!-- Professional applying sanitization in clean medical environment -->
+                    <img src="https://images.unsplash.com/photo-1584515933487-779824d29309?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400" 
+                         alt="Professional sanitization service" 
+                         class="w-full h-48 object-cover rounded-t-2xl"/>
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <i class="fas fa-virus-slash text-primary text-xl mr-3"></i>
+                            <h3 class="text-xl font-semibold">Sanitization Service</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">Professional disinfection and sanitization to eliminate viruses, bacteria, and harmful pathogens.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-secondary font-bold text-lg">From AED 200</span>
+                            <button class="bg-primary text-white px-4 py-2 rounded-full hover:bg-blue-800 transition-colors">
+                                Book Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- @END_MAP )) -->
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Services -->
+
+    <!-- @COMPONENT: BeforeAfterGallery [visual proof of service quality] -->
+    <section id="gallery" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">See the Difference</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">Real transformations from our professional cleaning services across Dubai</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- @MAP: beforeAfterImages.map(image => ( -->
+                <div class="relative group overflow-hidden rounded-2xl shadow-lg">
+                    <!-- Cluttered messy kitchen before professional cleaning -->
+                    <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
+                         alt="Kitchen before cleaning" 
+                         class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                    <div class="absolute bottom-4 left-4 text-white">
+                        <span class="bg-red-500 px-3 py-1 rounded-full text-sm font-semibold">Before</span>
+                        <p class="mt-2 font-semibold">Kitchen Deep Clean</p>
+                    </div>
+                </div>
+
+                <div class="relative group overflow-hidden rounded-2xl shadow-lg">
+                    <!-- Pristine clean modern kitchen after professional service -->
+                    <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
+                         alt="Kitchen after cleaning" 
+                         class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                    <div class="absolute bottom-4 left-4 text-white">
+                        <span class="bg-accent px-3 py-1 rounded-full text-sm font-semibold">After</span>
+                        <p class="mt-2 font-semibold">Kitchen Deep Clean</p>
+                    </div>
+                </div>
+
+                <div class="relative group overflow-hidden rounded-2xl shadow-lg">
+                    <!-- Messy office workspace with papers and clutter -->
+                    <img src="https://pixabay.com/get/g10bb84203a7fcd1caf2d0cdcaeb1f478e9662da3cf7aa6f12e9377b7e62cae94ec11ad248ea3bba641a25661e5485275bd96acd7a2ec593f1cceeb258de029b5_1280.jpg" 
+                         alt="Office before cleaning" 
+                         class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                    <div class="absolute bottom-4 left-4 text-white">
+                        <span class="bg-red-500 px-3 py-1 rounded-full text-sm font-semibold">Before</span>
+                        <p class="mt-2 font-semibold">Office Cleaning</p>
+                    </div>
+                </div>
+
+                <div class="relative group overflow-hidden rounded-2xl shadow-lg">
+                    <!-- Clean organized office with modern furniture -->
+                    <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
+                         alt="Office after cleaning" 
+                         class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                    <div class="absolute bottom-4 left-4 text-white">
+                        <span class="bg-accent px-3 py-1 rounded-full text-sm font-semibold">After</span>
+                        <p class="mt-2 font-semibold">Office Cleaning</p>
+                    </div>
+                </div>
+
+                <div class="relative group overflow-hidden rounded-2xl shadow-lg">
+                    <!-- Dirty bathroom with stains and grime -->
+                    <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
+                         alt="Bathroom before cleaning" 
+                         class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                    <div class="absolute bottom-4 left-4 text-white">
+                        <span class="bg-red-500 px-3 py-1 rounded-full text-sm font-semibold">Before</span>
+                        <p class="mt-2 font-semibold">Bathroom Deep Clean</p>
+                    </div>
+                </div>
+
+                <div class="relative group overflow-hidden rounded-2xl shadow-lg">
+                    <!-- Spotless modern bathroom with white fixtures -->
+                    <img src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
+                         alt="Bathroom after cleaning" 
+                         class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                    <div class="absolute bottom-4 left-4 text-white">
+                        <span class="bg-accent px-3 py-1 rounded-full text-sm font-semibold">After</span>
+                        <p class="mt-2 font-semibold">Bathroom Deep Clean</p>
+                    </div>
+                </div>
+                <!-- @END_MAP )) -->
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: BeforeAfterGallery -->
+
+    <!-- @COMPONENT: Testimonials [social proof and reviews] -->
+    <section id="testimonials" class="py-20 bg-primary">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-white mb-4">What Our Clients Say</h2>
+                <p class="text-xl text-blue-100 max-w-2xl mx-auto">Join hundreds of satisfied customers across Dubai</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- @MAP: testimonials.map(testimonial => ( -->
+                <div class="bg-white rounded-2xl p-8 shadow-xl">
+                    <div class="flex items-center mb-6">
+                        <div class="flex text-secondary text-lg">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="ml-2 text-gray-600 font-semibold">5.0</span>
+                    </div>
+                    <blockquote class="text-gray-700 mb-6 leading-relaxed">
+                        "Seven Degree transformed our villa completely. Their attention to detail is incredible and the team is so professional. We've been using them for 6 months now."
+                    </blockquote>
+                    <div class="flex items-center">
+                        <!-- Professional headshot of satisfied customer -->
+                        <img src="https://pixabay.com/get/g74a51867e74528850cc862437c780d3b8718c260b0c2b56a5022e16e374230c1feb92ebc4f1252aa7136addb945da0295766ce367f33b0af1a30c151f7f1cee7_1280.jpg" 
+                             alt="Customer testimonial" 
+                             class="w-12 h-12 rounded-full object-cover"/>
+                        <div class="ml-4">
+                            <div class="font-semibold text-gray-900" data-bind="testimonial.name">Sarah Al-Mansouri</div>
+                            <div class="text-gray-600 text-sm" data-bind="testimonial.location">Dubai Marina</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl p-8 shadow-xl">
+                    <div class="flex items-center mb-6">
+                        <div class="flex text-secondary text-lg">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="ml-2 text-gray-600 font-semibold">5.0</span>
+                    </div>
+                    <blockquote class="text-gray-700 mb-6 leading-relaxed">
+                        "Best cleaning service in Dubai! They handle our office cleaning and it's always spotless. Highly reliable and their eco-friendly products are a plus."
+                    </blockquote>
+                    <div class="flex items-center">
+                        <!-- Business professional headshot -->
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&h=150" 
+                             alt="Business customer testimonial" 
+                             class="w-12 h-12 rounded-full object-cover"/>
+                        <div class="ml-4">
+                            <div class="font-semibold text-gray-900" data-bind="testimonial.name">Ahmed Hassan</div>
+                            <div class="text-gray-600 text-sm" data-bind="testimonial.location">Business Bay</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl p-8 shadow-xl">
+                    <div class="flex items-center mb-6">
+                        <div class="flex text-secondary text-lg">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="ml-2 text-gray-600 font-semibold">5.0</span>
+                    </div>
+                    <blockquote class="text-gray-700 mb-6 leading-relaxed">
+                        "Called them for post-construction cleaning and they exceeded expectations. Fair pricing, punctual, and the quality of work is outstanding."
+                    </blockquote>
+                    <div class="flex items-center">
+                        <!-- Happy female customer headshot -->
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&h=150" 
+                             alt="Satisfied customer testimonial" 
+                             class="w-12 h-12 rounded-full object-cover"/>
+                        <div class="ml-4">
+                            <div class="font-semibold text-gray-900" data-bind="testimonial.name">Priya Sharma</div>
+                            <div class="text-gray-600 text-sm" data-bind="testimonial.location">Jumeirah</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- @END_MAP )) -->
+            </div>
+
+            <!-- Trust indicators -->
+            <div class="mt-16 text-center">
+                <div class="flex justify-center items-center space-x-8 text-blue-200">
+                    <div class="flex items-center">
+                        <i class="fas fa-certificate text-2xl mr-2"></i>
+                        <span>Licensed & Insured</span>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fas fa-award text-2xl mr-2"></i>
+                        <span>Dubai Municipality Approved</span>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fas fa-handshake text-2xl mr-2"></i>
+                        <span>100% Satisfaction Guarantee</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Testimonials -->
+
+    <!-- @COMPONENT: ServiceAreas [Dubai coverage map] -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">We Serve All of Dubai</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">Professional cleaning services available across all Dubai neighborhoods</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <!-- Dubai map highlighting service areas -->
+                    <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
+                         alt="Dubai map showing service coverage areas" 
+                         class="w-full rounded-2xl shadow-lg"/>
+                </div>
+                
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6">Our Service Areas</h3>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="flex items-center text-gray-700">
+                            <i class="fas fa-map-marker-alt text-primary mr-3"></i>
+                            <span>Dubai Marina</span>
+                        </div>
+                        <div class="flex items-center text-gray-700">
+                            <i class="fas fa-map-marker-alt text-primary mr-3"></i>
+                            <span>Downtown Dubai</span>
+                        </div>
+                        <div class="flex items-center text-gray-700">
+                            <i class="fas fa-map-marker-alt text-primary mr-3"></i>
+                            <span>Business Bay</span>
+                        </div>
+                        <div class="flex items-center text-gray-700">
+                            <i class="fas fa-map-marker-alt text-primary mr-3"></i>
+                            <span>Jumeirah</span>
+                        </div>
+                        <div class="flex items-center text-gray-700">
+                            <i class="fas fa-map-marker-alt text-primary mr-3"></i>
+                            <span>JBR</span>
+                        </div>
+                        <div class="flex items-center text-gray-700">
+                            <i class="fas fa-map-marker-alt text-primary mr-3"></i>
+                            <span>Palm Jumeirah</span>
+                        </div>
+                        <div class="flex items-center text-gray-700">
+                            <i class="fas fa-map-marker-alt text-primary mr-3"></i>
+                            <span>DIFC</span>
+                        </div>
+                        <div class="flex items-center text-gray-700">
+                            <i class="fas fa-map-marker-alt text-primary mr-3"></i>
+                            <span>Bur Dubai</span>
+                        </div>
+                        <div class="flex items-center text-gray-700">
+                            <i class="fas fa-map-marker-alt text-primary mr-3"></i>
+                            <span>Deira</span>
+                        </div>
+                        <div class="flex items-center text-gray-700">
+                            <i class="fas fa-map-marker-alt text-primary mr-3"></i>
+                            <span>Dubai Hills</span>
+                        </div>
+                        <div class="flex items-center text-gray-700">
+                            <i class="fas fa-map-marker-alt text-primary mr-3"></i>
+                            <span>Arabian Ranches</span>
+                        </div>
+                        <div class="flex items-center text-gray-700">
+                            <i class="fas fa-map-marker-alt text-primary mr-3"></i>
+                            <span>And More...</span>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8 p-6 bg-sand/30 rounded-xl">
+                        <h4 class="font-semibold text-gray-900 mb-2">Same-Day Service Available</h4>
+                        <p class="text-gray-600 mb-4">Need urgent cleaning? We offer same-day service for most areas in Dubai when booked before 2 PM.</p>
+                        <button class="bg-secondary text-white px-6 py-3 rounded-full hover:bg-dubai-gold transition-colors">
+                            Check Availability
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: ServiceAreas -->
+
+    <!-- @COMPONENT: BookingForm [interactive quote request] -->
+    <section id="contact" class="py-20 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Get Your Free Quote</h2>
+                <p class="text-xl text-gray-600">Tell us about your cleaning needs and we'll provide a customized quote within 30 minutes</p>
+            </div>
+
+            <div class="bg-white rounded-3xl shadow-xl p-8 md:p-12">
+                <form class="space-y-6">
+                    <!-- @STATE: formData:object = {} -->
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-2">Full Name *</label>
+                            <input type="text" 
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-primary focus:border-primary transition-colors" 
+                                   placeholder="Enter your full name"
+                                   data-bind="formData.name"
+                                   data-mock="true">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-2">Phone Number *</label>
+                            <input type="tel" 
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-primary focus:border-primary transition-colors" 
+                                   placeholder="+971 50 XXX XXXX"
+                                   data-bind="formData.phone"
+                                   data-mock="true">
+                        </div>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-2">Email Address</label>
+                            <input type="email" 
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-primary focus:border-primary transition-colors" 
+                                   placeholder="your.email@example.com"
+                                   data-bind="formData.email"
+                                   data-mock="true">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-2">Property Type *</label>
+                            <select class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-primary focus:border-primary transition-colors"
+                                    data-bind="formData.propertyType"
+                                    data-mock="true">
+                                <option value="">Select property type</option>
+                                <option value="apartment">Apartment</option>
+                                <option value="villa">Villa</option>
+                                <option value="office">Office</option>
+                                <option value="commercial">Commercial Space</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-2">Service Type *</label>
+                            <select class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-primary focus:border-primary transition-colors"
+                                    data-bind="formData.serviceType"
+                                    data-mock="true">
+                                <option value="">Select service</option>
+                                <option value="regular">Regular Cleaning</option>
+                                <option value="deep">Deep Cleaning</option>
+                                <option value="move">Move-in/Move-out</option>
+                                <option value="construction">Post-Construction</option>
+                                <option value="sanitization">Sanitization</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-2">Preferred Date</label>
+                            <input type="date" 
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-primary focus:border-primary transition-colors"
+                                   data-bind="formData.preferredDate"
+                                   data-mock="true">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-700 mb-2">Property Address *</label>
+                        <input type="text" 
+                               class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-primary focus:border-primary transition-colors" 
+                               placeholder="Full address including area (e.g., Dubai Marina, JBR, etc.)"
+                               data-bind="formData.address"
+                               data-mock="true">
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-700 mb-2">Additional Details</label>
+                        <textarea class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-primary focus:border-primary transition-colors h-32" 
+                                  placeholder="Tell us about any specific requirements, areas of focus, or questions you have..."
+                                  data-bind="formData.details"
+                                  data-mock="true"></textarea>
+                    </div>
+
+                    <div class="flex items-center">
+                        <input type="checkbox" 
+                               class="h-5 w-5 text-primary focus:ring-primary border-gray-300 rounded" 
+                               data-bind="formData.consent"
+                               data-mock="true">
+                        <label class="ml-3 text-sm text-gray-600">
+                            I agree to receive WhatsApp and SMS updates about my booking
+                        </label>
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <button type="submit" 
+                                class="flex-1 bg-primary text-white py-4 px-8 rounded-xl font-semibold hover:bg-blue-800 transition-colors flex items-center justify-center"
+                                data-event="click:handleQuoteSubmit"
+                                data-implementation="Should validate form and submit quote request">
+                            <i class="fas fa-paper-plane mr-2"></i>
+                            Get Free Quote
+                        </button>
+                        <button type="button" 
+                                class="flex-1 bg-secondary text-white py-4 px-8 rounded-xl font-semibold hover:bg-dubai-gold transition-colors flex items-center justify-center"
+                                data-event="click:handleCallNow"
+                                data-implementation="Should initiate phone call">
+                            <i class="fas fa-phone mr-2"></i>
+                            Call Now: +971 50 123 4567
+                        </button>
+                    </div>
+                </form>
+
+                <!-- Contact methods -->
+                <div class="mt-12 pt-8 border-t border-gray-200">
+                    <h3 class="text-lg font-semibold text-gray-900 mb-6 text-center">Or Reach Us Directly</h3>
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div class="text-center">
+                            <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center mx-auto mb-3">
+                                <i class="fas fa-phone text-white"></i>
+                            </div>
+                            <p class="font-semibold text-gray-900">Call Us</p>
+                            <p class="text-primary font-semibold">+971 50 123 4567</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="w-12 h-12 bg-accent rounded-full flex items-center justify-center mx-auto mb-3">
+                                <i class="fab fa-whatsapp text-white"></i>
+                            </div>
+                            <p class="font-semibold text-gray-900">WhatsApp</p>
+                            <p class="text-accent font-semibold">+971 50 123 4567</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="w-12 h-12 bg-secondary rounded-full flex items-center justify-center mx-auto mb-3">
+                                <i class="fas fa-envelope text-white"></i>
+                            </div>
+                            <p class="font-semibold text-gray-900">Email</p>
+                            <p class="text-secondary font-semibold">info@sevendegreecleaning.ae</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: BookingForm -->
+
+    <!-- @COMPONENT: Footer [comprehensive site footer] -->
+    <footer class="bg-gray-900 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="md:col-span-2">
+                    <div class="flex items-center space-x-2 mb-6">
+                        <i class="fas fa-spray-can text-secondary text-2xl"></i>
+                        <span class="text-2xl font-bold">Seven Degree Cleaning</span>
+                    </div>
+                    <p class="text-gray-300 mb-6 max-w-md">
+                        Dubai's premier cleaning service providing professional residential and commercial cleaning solutions with 100% satisfaction guarantee.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-primary rounded-full flex items-center justify-center hover:bg-secondary transition-colors">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-primary rounded-full flex items-center justify-center hover:bg-secondary transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-primary rounded-full flex items-center justify-center hover:bg-secondary transition-colors">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-primary rounded-full flex items-center justify-center hover:bg-secondary transition-colors">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-6">Services</h3>
+                    <ul class="space-y-3 text-gray-300">
+                        <li><a href="#" class="hover:text-secondary transition-colors">Residential Cleaning</a></li>
+                        <li><a href="#" class="hover:text-secondary transition-colors">Office Cleaning</a></li>
+                        <li><a href="#" class="hover:text-secondary transition-colors">Deep Cleaning</a></li>
+                        <li><a href="#" class="hover:text-secondary transition-colors">Move-in/Move-out</a></li>
+                        <li><a href="#" class="hover:text-secondary transition-colors">Post-Construction</a></li>
+                        <li><a href="#" class="hover:text-secondary transition-colors">Sanitization</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-6">Contact Info</h3>
+                    <ul class="space-y-3 text-gray-300">
+                        <li class="flex items-center">
+                            <i class="fas fa-phone mr-3 text-secondary"></i>
+                            +971 50 123 4567
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-3 text-secondary"></i>
+                            info@sevendegreecleaning.ae
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-map-marker-alt mr-3 text-secondary"></i>
+                            Dubai, United Arab Emirates
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-clock mr-3 text-secondary"></i>
+                            24/7 Available
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm">
+                    &copy; <span data-bind="currentYear">2024</span> Seven Degree Cleaning Services. All rights reserved.
+                </p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="#" class="text-gray-400 hover:text-secondary text-sm transition-colors">Privacy Policy</a>
+                    <a href="#" class="text-gray-400 hover:text-secondary text-sm transition-colors">Terms of Service</a>
+                    <a href="#" class="text-gray-400 hover:text-secondary text-sm transition-colors">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- @END_COMPONENT: Footer -->
+
+    <!-- Back to top button -->
+    <button id="backToTop" class="fixed bottom-8 right-8 bg-primary text-white w-12 h-12 rounded-full shadow-lg hover:bg-secondary transition-all duration-300 opacity-0 invisible">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script>
+        (function() {
+            // TODO: Implement smooth scrolling navigation
+            // TODO: Implement form validation and submission
+            // TODO: Implement mobile menu toggle
+            // TODO: Implement back to top functionality
+            // TODO: Implement lazy loading for images
+            // TODO: Implement booking calendar integration
+            
+            // Simple smooth scrolling for navigation links
+            document.addEventListener('DOMContentLoaded', function() {
+                const navLinks = document.querySelectorAll('a[href^="#"]');
+                navLinks.forEach(link => {
+                    link.addEventListener('click', function(e) {
+                        e.preventDefault();
+                        const targetId = this.getAttribute('href');
+                        const targetSection = document.querySelector(targetId);
+                        if (targetSection) {
+                            targetSection.scrollIntoView({
+                                behavior: 'smooth',
+                                block: 'start'
+                            });
+                        }
+                    });
+                });
+
+                // Back to top button visibility
+                const backToTopBtn = document.getElementById('backToTop');
+                window.addEventListener('scroll', function() {
+                    if (window.pageYOffset > 300) {
+                        backToTopBtn.classList.remove('opacity-0', 'invisible');
+                    } else {
+                        backToTopBtn.classList.add('opacity-0', 'invisible');
+                    }
+                });
+
+                backToTopBtn.addEventListener('click', function() {
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        })();
+    </script>
+</body>
+</html>

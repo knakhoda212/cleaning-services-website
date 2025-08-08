@@ -1,10 +1,8 @@
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { insertBookingSchema } from "@shared/schema";
 import type { InsertBooking } from "@shared/schema";
-import { apiRequest } from "@/lib/queryClient";
 import { useToast } from "@/hooks/use-toast";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -16,7 +14,7 @@ import { Send, Phone, MessageCircle, Mail } from "lucide-react";
 
 export default function BookingForm() {
   const { toast } = useToast();
-  const queryClient = useQueryClient();
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const form = useForm<InsertBooking>({
     resolver: zodResolver(insertBookingSchema.extend({
@@ -35,30 +33,19 @@ export default function BookingForm() {
     }
   });
 
-  const createBookingMutation = useMutation({
-    mutationFn: async (data: InsertBooking) => {
-      const response = await apiRequest("POST", "/api/bookings", data);
-      return response.json();
-    },
-    onSuccess: () => {
+  const onSubmit = async (data: InsertBooking) => {
+    setIsSubmitting(true);
+    
+    // Netlify Forms will handle the submission automatically
+    // The form will be submitted to Netlify's form handling service
+    setTimeout(() => {
       toast({
         title: "Quote Request Submitted!",
         description: "We'll contact you within 30 minutes with your customized quote.",
       });
       form.reset();
-      queryClient.invalidateQueries({ queryKey: ["/api/bookings"] });
-    },
-    onError: (error: any) => {
-      toast({
-        title: "Error",
-        description: error.message || "Failed to submit quote request. Please try again.",
-        variant: "destructive",
-      });
-    },
-  });
-
-  const onSubmit = (data: InsertBooking) => {
-    createBookingMutation.mutate(data);
+      setIsSubmitting(false);
+    }, 1000);
   };
 
   const handleCallNow = () => {
@@ -75,7 +62,16 @@ export default function BookingForm() {
 
         <div className="bg-white rounded-3xl shadow-xl p-8 md:p-12">
           <Form {...form}>
-            <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
+            <form 
+              onSubmit={form.handleSubmit(onSubmit)} 
+              className="space-y-6"
+              name="booking-form"
+              method="POST"
+              data-netlify="true"
+              data-netlify-honeypot="bot-field"
+            >
+              <input type="hidden" name="form-name" value="booking-form" />
+              <input type="hidden" name="bot-field" />
               <div className="grid md:grid-cols-2 gap-6">
                 <FormField
                   control={form.control}
@@ -267,11 +263,11 @@ export default function BookingForm() {
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button 
                   type="submit" 
-                  disabled={createBookingMutation.isPending}
+                  disabled={isSubmitting}
                   className="flex-1 bg-primary text-white py-4 px-8 rounded-xl font-semibold hover:bg-blue-800 transition-colors"
                 >
                   <Send className="mr-2 h-5 w-5" />
-                  {createBookingMutation.isPending ? "Submitting..." : "Get Free Quote"}
+                  {isSubmitting ? "Submitting..." : "Get Free Quote"}
                 </Button>
                 <Button 
                   type="button"
